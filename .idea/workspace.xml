@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e843820b-5864-4a34-b747-f359654f547f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1jY5BCT0OrESeYqVee1hTqmkP90" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e843820b-5864-4a34-b747-f359654f547f" name="Default Changelist" comment="" />
+      <created>1603968047061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603968047061</updated>
+      <workItem from="1603968048090" duration="983000" />
+      <workItem from="1603969472884" duration="1486000" />
+      <workItem from="1603971350634" duration="1380000" />
+      <workItem from="1603999875059" duration="1768000" />
+      <workItem from="1604001696337" duration="1789000" />
+      <workItem from="1604003518415" duration="1607000" />
+      <workItem from="1604005392551" duration="1300000" />
+      <workItem from="1604056474708" duration="145000" />
+      <workItem from="1604060391184" duration="515000" />
+      <workItem from="1604070284318" duration="1377000" />
+      <workItem from="1604072101117" duration="1778000" />
+      <workItem from="1604076782479" duration="233000" />
+      <workItem from="1604158718296" duration="1775000" />
+      <workItem from="1604160588265" duration="1763000" />
+      <workItem from="1604171275697" duration="1028000" />
+      <workItem from="1604172347793" duration="1653000" />
+      <workItem from="1604174166519" duration="1094000" />
+      <workItem from="1604347347828" duration="827000" />
+      <workItem from="1604398092329" duration="59000" />
+      <workItem from="1604417715790" duration="587000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1604417766112">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1604417766112" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1604347378247">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1604347378247" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604072923337">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1604072923337" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1603968788503">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1603968788503" />
+  </component>
+</project>
