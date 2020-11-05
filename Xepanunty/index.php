@@ -12,6 +12,9 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
     $whatsappLink = '<a target="_blank"  href="https://web.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 926 608 440.</a>";
 }
 ?>
+<?php
+phpinfo();
+?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
