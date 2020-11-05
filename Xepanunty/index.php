@@ -322,7 +322,7 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
                 <p>+351 926 608 440</p>
               </div>
 
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei1SLiBkZSBOb3NzYSBTcmEuIGRhIE1haWEsIDQ0NzAgTWFpYSwgUG9ydHVnYWwiLiosChQKEgkJE-8AUWYkDREl58AxjFrw9hIUChIJ4zGTOfhmJA0RfmcqcLKlVKk&key=AIzaSyAvHh0XrF0po4RzJWYciWeNzMCIy2Imr6s" allowfullscreen></iframe>
+                <!--<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei1SLiBkZSBOb3NzYSBTcmEuIGRhIE1haWEsIDQ0NzAgTWFpYSwgUG9ydHVnYWwiLiosChQKEgkJE-8AUWYkDREl58AxjFrw9hIUChIJ4zGTOfhmJA0RfmcqcLKlVKk&key=AIzaSyAvHh0XrF0po4RzJWYciWeNzMCIy2Imr6s" allowfullscreen></iframe>-->
             </div>
 
           </div>
@@ -332,23 +332,23 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">O seu Nome</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="O nome tem de ter mais de 4 caracters" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">O seu email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor introduza um email valido" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Assunto</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Por favor o subject tem de ter pelo menos 8 letras" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
                 <label for="name">Mensagem</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Escreva algo para nos."></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
