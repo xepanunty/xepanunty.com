@@ -370,7 +370,7 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter" data-aos="fade-up">
+    <!--<div class="footer-newsletter" data-aos="fade-up">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -382,7 +382,7 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="footer-top">
       <div class="container">
