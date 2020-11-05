@@ -1,15 +1,30 @@
 <!DOCTYPE html>
+<?php
+$android = stripos($_SERVER['HTTP_USER_AGENT'], "android");
+$iphone = stripos($_SERVER['HTTP_USER_AGENT'], "iphone");
+$ipad = stripos($_SERVER['HTTP_USER_AGENT'], "ipad");
 
+$whatsappNumber = '00351926608440';
+$whatsappLink = '';
+if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
+    $whatsappLink = '<a target="_blank" href="https://api.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 926 608 440.</a>";
+} else {//For desktop
+    $whatsappLink = '<a target="_blank"  href="https://web.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 926 608 440.</a>";
+}
+?>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Xepanunty</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="software services">
+  <meta name="og:title" property="og:title" content="soluctions and software">
+  <meta name="author" content="marcelo.teixeira">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://xepanunty.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="xepanunty, maia, porto, portugal, desenvolvimento para o estado, engenharia, base de dados, software maia, factory, energy, porto, php, ract, node-js, node, desenvolvimento web, web, xepanunty.com, xepannunty,HTML, CSS, JavaScript">
+  <title>xepanunty software services</title>
   <!-- Favicons -->
   <link href="assets/img/xepanunty.png" rel="icon">
   <link href="assets/img/xepanunty-icon.png" rel="apple-touch-icon">
@@ -24,6 +39,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -37,18 +53,18 @@
     <div class="container-fluid d-flex">
 
       <div class="logo mr-auto">
-         <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+         <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.htm">Home</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
           <li><a href="#about">Sobre Nós</a></li>
           <li><a href="#services">Serviços</a></li>
           <li><a href="#team">Equipa</a></li>
           <li><a href="#contact">Contacto</a></li>
-          <li class="login"><a href="login.html">LOGIN</a></li>
-          <li class="get-started"><a href="register.html">Registo</a></li>
+          <li class="get-started"><?php echo $whatsappLink ?></li>
+
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -72,7 +88,6 @@
         <!-- End imagem primeira secçaõ-->
       </div>
     </div>
-
   </section><!-- End Hero -->
 
   <main id="main">
@@ -98,13 +113,13 @@
             <div class="row">
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                <h4>Desenvolvimento por medida</h4>
+                <p>Qualquer necessidade, estamos prontos a desenvolver</p>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris nisi</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                <h4>Estudos previos e orcamentacao</h4>
+                <p>Equipa especializada em lhe forneceder a melhor solucao</p>
               </div>
             </div>
           </div>
@@ -127,7 +142,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Design Gráfico</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+              <p class="description">Logotipos, vectores, animacoes, imagem grafica da sua empresa</p>
             </div>
           </div>
 
@@ -135,23 +150,23 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">Web Design</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+              <p class="description">Site da sua empresa ou marca.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+              <h4 class="title"><a href="">Software especifico</a></h4>
+              <p class="description">Qualquer necessidade que queira ver concretizada</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+              <h4 class="title"><a href="">Redes Sociais</a></h4>
+              <p class="description">Equipa especializada em redes sociais.</p>
             </div>
           </div>
 
@@ -167,8 +182,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Our team is always here to help</p>
+          <h2>Equipa</h2>
+          <p>A nossa equipa pronta a ajudar</p>
         </div>
           <center>
         <div class="row">
@@ -206,61 +221,63 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Q.F.Q.</h2>
-          <p>Questões Frequentemnete Questionadas</p>
+          <p>Questões Frequentemente Questionadas</p>
         </div>
 
         <ul class="faq-list">
 
           <li data-aos="fade-up" data-aos-delay="100">
-            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" class="" href="#faq1">Porque existimos? <i class="icofont-simple-up"></i></a>
             <div id="faq1" class="collapse show" data-parent=".faq-list">
               <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  A xepanunty foi criada em 2019 com o proposito :
+                  Desenvolvimento informático, venda de material informático. Reconstrução de material informático. Importação e Exportação de material informático. Vendas online. Sites online com marcas registadas. Fabricação de roupa, comercialização de produtos de vestuário. Venda de roupa online. Desenvolvimento de software e hardware. Elaboração de sites online e web. Programação informática.
+
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="200">
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Contractos flexiveis? <i class="icofont-simple-up"></i></a>
             <div id="faq2" class="collapse" data-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Podemos criar um pacote de solucoes completo com base nas necessidades da sua empresa.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="300">
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Projectos internacionais e freelancer? <i class="icofont-simple-up"></i></a>
             <div id="faq3" class="collapse" data-parent=".faq-list">
               <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  Sempre disponiveis...
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="400">
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Os orcamentos sao gratis? <i class="icofont-simple-up"></i></a>
             <div id="faq4" class="collapse" data-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Sim, com base na situacao actualmente vivida, enviamos e um relatorio especifico com bases nos requisitos que nos especifica.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="500">
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Temos alojamento web e venda de Dominios? <i class="icofont-simple-up"></i></a>
             <div id="faq5" class="collapse" data-parent=".faq-list">
               <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  Sim, alojamento possuimos nos nossos servidores proprios, dominios temos os nossos parceiros.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="600">
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Solucao de alta escala? <i class="icofont-simple-up"></i></a>
             <div id="faq6" class="collapse" data-parent=".faq-list">
               <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  Tem um SYS-ADMIN internacional com experencia dedicada, para criar um sistema de email para a sua empresa entre outros.
               </p>
             </div>
           </li>
@@ -278,9 +295,9 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
+          <h2>Contactos</h2>
           <p>
-            Contact us if you have any particular questions.</p>
+           Entre em contacto para orcamentos e perguntas em particular.</p>
         </div>
 
         <div class="row">
@@ -289,8 +306,8 @@
             <div class="info">
               <div class="address">
                 <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>Praceta Artur Marques 46-104, 4470-079 Maia</p>
+                <h4>ONDE ESTAMOS:</h4>
+                <p>Rua Nossa Senhora da Maia, n.º 77, 1.º Andar, Esc. 23, 4470-255 - Maia</p>
               </div>
 
               <div class="email">
@@ -301,12 +318,11 @@
 
               <div class="phone">
                 <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>TELEMOVEL:</h4>
+                <p>+351 926 608 440</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei1SLiBkZSBOb3NzYSBTcmEuIGRhIE1haWEsIDQ0NzAgTWFpYSwgUG9ydHVnYWwiLiosChQKEgkJE-8AUWYkDREl58AxjFrw9hIUChIJ4zGTOfhmJA0RfmcqcLKlVKk&key=AIzaSyAvHh0XrF0po4RzJWYciWeNzMCIy2Imr6s" allowfullscreen></iframe>            </div>
 
           </div>
 
@@ -314,32 +330,32 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name">O seu Nome</label>
                   <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name">O seu email</label>
                   <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name">Assunto</label>
                 <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name">Mensagem</label>
                 <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
-                <div class="loading">Loading</div>
+                <div class="loading">A carregar</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">A sua mensagem foi enviada com sucesso.Muito Obrigado em breve sera contactado por um dos nossos profissionais!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
             </form>
           </div>
 
@@ -360,7 +376,7 @@
             <h4>Subscreve o nosso Newsletter</h4>
             <h5>Subscreve para te manteres informado das novas novidades!</h5>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Subscrever">
             </form>
           </div>
         </div>
@@ -386,22 +402,22 @@
           <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
             <h4>Links Úteis</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Sobre Nós</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Serviços</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Termos de Serviço</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de Privaçidade</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre Nós</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Serviços</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Equipa</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contactos</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
             <h4>Os nossos Serviços</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Design para Web</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Desenvolvimento Web</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Gestão de produtos</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Design Gráfico</a></li>
+              <li><i class="bx bx-chevron-right"></i>Design para Web</li>
+              <li><i class="bx bx-chevron-right"></i>Desenvolvimento Web</li>
+              <li><i class="bx bx-chevron-right"></i>Gestão de produtos</li>
+              <li><i class="bx bx-chevron-right"></i>Marketing</li>
+              <li><i class="bx bx-chevron-right"></i>Design Gráfico</li>
             </ul>
           </div>
 
@@ -409,10 +425,8 @@
             <h4>As nossas Redes Sociais</h4>
             <p>Segue-nos nas Redes Sociais para te manteres atualizado!</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="https://www.facebook.com/xepanunty" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="http://instagram.com/xepanunty" class="instagram"><i class="bx bxl-instagram"></i></a>
               <a href="https://www.linkedin.com/in/andremarcelo" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
