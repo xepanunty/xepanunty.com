@@ -323,6 +323,8 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
               </div>
 
                 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei1SLiBkZSBOb3NzYSBTcmEuIGRhIE1haWEsIDQ0NzAgTWFpYSwgUG9ydHVnYWwiLiosChQKEgkJE-8AUWYkDREl58AxjFrw9hIUChIJ4zGTOfhmJA0RfmcqcLKlVKk&key=AIzaSyAvHh0XrF0po4RzJWYciWeNzMCIy2Imr6s" allowfullscreen></iframe>
+            </div>
+
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
