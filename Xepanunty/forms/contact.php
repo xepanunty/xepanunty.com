@@ -14,7 +14,7 @@ $to      = $receiving_email_address;
 $subject = $_POST['subject'];
 $message =$_POST['message'];
 $headers = "From:". $_POST['email'] . "-" .  $_POST['name'] . "\r\n" .
-    'Reply-To: webmaster@xepanunty.com' . "\r\n" .
+    'Reply-To: xepanunty@gmail.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 
