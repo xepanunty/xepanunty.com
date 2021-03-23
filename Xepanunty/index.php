@@ -4,12 +4,12 @@ $android = stripos($_SERVER['HTTP_USER_AGENT'], "android");
 $iphone = stripos($_SERVER['HTTP_USER_AGENT'], "iphone");
 $ipad = stripos($_SERVER['HTTP_USER_AGENT'], "ipad");
 
-$whatsappNumber = '00351926608440';
+$whatsappNumber = '00351911006195';
 $whatsappLink = '';
 if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
-    $whatsappLink = '<a target="_blank" href="https://api.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 926 608 440.</a>";
+    $whatsappLink = '<a target="_blank" href="https://api.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 911 006 195.</a>";
 } else {//For desktop
-    $whatsappLink = '<a target="_blank"  href="https://web.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 926 608 440.</a>";
+    $whatsappLink = '<a target="_blank"  href="https://web.whatsapp.com/send?phone='.$whatsappNumber.'">'."<i class='fa fa-whatsapp'></i> +351 911 006 195.</a>";
 }
 ?>
 <html lang="en">
@@ -319,7 +319,7 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>TELEMOVEL:</h4>
-                <p>+351 926 608 440</p>
+                <p>+351 911 006 195</p>
               </div>
 
                 <!--<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei1SLiBkZSBOb3NzYSBTcmEuIGRhIE1haWEsIDQ0NzAgTWFpYSwgUG9ydHVnYWwiLiosChQKEgkJE-8AUWYkDREl58AxjFrw9hIUChIJ4zGTOfhmJA0RfmcqcLKlVKk&key=AIzaSyAvHh0XrF0po4RzJWYciWeNzMCIy2Imr6s" allowfullscreen></iframe>-->
@@ -395,7 +395,7 @@ if($android !== false || $ipad !== false || $iphone !== false) {//For mobile
               n.º 77, 1.º Andar, Esc.23<br>
               Maia - 4470-255<br>
               Portugal <br><br>
-              <strong>Phone:</strong> 926608440<br>
+              <strong>Phone:</strong> 911006195<br>
               <strong>Email:</strong> xepanunty@gmail.com<br>
             </p>
           </div>
